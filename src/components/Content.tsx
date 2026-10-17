@@ -2,7 +2,7 @@ import { ArrowRight, ArrowDown } from 'lucide-react'
 import { useInView } from '@/hooks/useInView'
 import Stagger from '@/components/Stagger'
 import Logo from '@/components/Logo'
-import type { EnquiryType } from '@/constants'
+import { scrollToTop, type EnquiryType } from '@/constants'
 
 type EnquireFn = (type: EnquiryType, destination?: string) => void
 
@@ -221,7 +221,7 @@ export function Footer() {
       </div>
       <div className="mt-16 pt-8 border-t border-white/15 flex flex-col sm:flex-row justify-between gap-4 text-xs tracking-[0.15em] uppercase text-white/45">
         <p>© {new Date().getFullYear()} JETSETR. All rights reserved.</p>
-        <a href="#top" className="inline-flex items-center gap-2 hover:text-white transition-colors">
+        <a href="/" onClick={scrollToTop} className="inline-flex items-center gap-2 hover:text-white transition-colors">
           Back to top <ArrowDown size={12} className="rotate-180" />
         </a>
       </div>

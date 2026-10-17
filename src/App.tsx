@@ -44,7 +44,7 @@ export default function App() {
   }
 
   return (
-    <main id="top">
+    <main>
       <div ref={containerRef} className="relative h-[500vh]">
         <div className="sticky top-0 w-full h-screen overflow-hidden bg-sand">
           <video
@@ -72,13 +72,6 @@ export default function App() {
                   <h1 className="text-[clamp(2rem,5vw,5rem)] font-light uppercase leading-[1.2] max-w-[14ch]" style={{ color: DARK, ...glow }}>
                     Your ideal travel partner
                   </h1>
-                </Stagger>
-                <Stagger visible={o1 > 0.3} delay={150}>
-                  <p className="mt-6 text-sm tracking-[0.3em] uppercase leading-relaxed" style={{ color: `${DARK}90`, ...glow }}>
-                    Inbound &amp; outbound journeys,
-                    <br />
-                    expertly made
-                  </p>
                 </Stagger>
               </div>
               <Stagger visible={o1 > 0.3} delay={300} className="absolute bottom-12 right-6 sm:right-8 md:right-12">

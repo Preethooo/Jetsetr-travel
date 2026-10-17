@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { ArrowRight } from 'lucide-react'
-import { DARK, NAV_LINKS } from '@/constants'
+import { DARK, NAV_LINKS, scrollToTop } from '@/constants'
 import Logo from '@/components/Logo'
 
 type Props = { isLight: boolean; onOpenMenu: () => void }
@@ -27,7 +27,7 @@ export default function Navbar({ isLight, onOpenMenu }: Props) {
     >
       {/* Left: links (lg+) / hamburger (<lg) */}
       <div className="flex items-center gap-10 xl:gap-14">
-        <a href="#top" className="hidden lg:block" style={entrance(mounted, 0)}>
+        <a href="/" onClick={scrollToTop} className="hidden lg:block" style={entrance(mounted, 0)}>
           <Logo />
         </a>
         <ul className="hidden lg:flex items-center gap-8 xl:gap-10">
@@ -54,7 +54,7 @@ export default function Navbar({ isLight, onOpenMenu }: Props) {
 
       {/* Center logo below lg */}
       <div className="lg:hidden absolute left-1/2 -translate-x-1/2">
-        <a href="#top" className="block" style={entrance(mounted, 300)}>
+        <a href="/" onClick={scrollToTop} className="block" style={entrance(mounted, 300)}>
           <Logo />
         </a>
       </div>
@@ -67,9 +67,6 @@ export default function Navbar({ isLight, onOpenMenu }: Props) {
             <ArrowRight size={10} color={isLight ? DARK : '#ffffff'} />
           </span>
         </a>
-        <button onClick={onOpenMenu} className="text-xs tracking-[0.2em] uppercase font-medium hover:opacity-70 transition-opacity">
-          Menu
-        </button>
       </div>
     </nav>
   )

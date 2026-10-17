@@ -1,4 +1,13 @@
+import type { MouseEvent } from 'react'
+
 export const DARK = '#1D3045'
+
+/** Smooth-scroll to the top without leaving a #hash in the URL. */
+export const scrollToTop = (e?: MouseEvent) => {
+  e?.preventDefault()
+  window.scrollTo({ top: 0, behavior: 'smooth' })
+  history.replaceState(null, '', window.location.pathname + window.location.search)
+}
 
 export const NAV_LINKS = [
   { label: 'Destinations', href: '#destinations' },
