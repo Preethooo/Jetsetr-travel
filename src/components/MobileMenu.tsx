@@ -44,7 +44,7 @@ export default function MobileMenu({ open, onClose }: Props) {
               <a
                 href={l.href}
                 onClick={onClose}
-                className={`block px-8 sm:px-12 py-3 text-2xl sm:text-3xl font-light tracking-wide uppercase transition-colors ${
+                className={`block px-8 sm:px-12 py-3 text-2xl sm:text-3xl font-normal tracking-wide uppercase transition-colors ${
                   i === 0 ? 'text-white' : 'text-white/60 hover:text-white'
                 }`}
               >

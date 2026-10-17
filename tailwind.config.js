@@ -9,7 +9,7 @@ export default {
         gold: '#C9A46A',
       },
       fontFamily: {
-        sans: ['Jost', 'Futura', "'Century Gothic'", 'system-ui', 'sans-serif'],
+        sans: ["'Helvetica Neue'", 'Helvetica', 'Inter', 'Arial', 'sans-serif'],
       },
     },
   },

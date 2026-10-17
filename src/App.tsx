@@ -69,7 +69,7 @@ export default function App() {
             <section className="absolute inset-0" style={sectionStyle(o1)} aria-hidden={o1 === 0}>
               <div className="h-full flex flex-col justify-center px-6 sm:px-8 md:px-20 lg:px-32">
                 <Stagger visible={o1 > 0.3}>
-                  <h1 className="text-[clamp(2rem,5vw,5rem)] font-light uppercase leading-[1.2] max-w-[14ch]" style={{ color: DARK, ...glow }}>
+                  <h1 className="text-[clamp(2rem,5vw,5rem)] font-normal uppercase leading-[1.2] max-w-[14ch]" style={{ color: DARK, ...glow }}>
                     Your ideal travel partner
                   </h1>
                 </Stagger>
@@ -91,7 +91,7 @@ export default function App() {
               <div className="h-full flex items-center justify-center px-6 sm:px-8">
                 <Stagger visible={o2 > 0.3} className="max-w-[900px]">
                   <h2
-                    className="text-[clamp(1.5rem,4.5vw,4.5rem)] font-extralight tracking-wide leading-[1.3] text-center uppercase"
+                    className="text-[clamp(1.5rem,4.5vw,4.5rem)] font-light tracking-wide leading-[1.3] text-center uppercase"
                     style={{ color: DARK }}
                   >
                     Decades of journeys planned{' '}
@@ -137,7 +137,7 @@ export default function App() {
                     <p className="text-white/80 text-lg tracking-wide mb-4">Cruises | MICE | Holidays</p>
                   </Stagger>
                   <Stagger visible={o3 > 0.3} delay={150}>
-                    <h2 className="text-[clamp(2rem,4vw,4rem)] font-light text-white leading-[1.2] uppercase tracking-wide mb-8">
+                    <h2 className="text-[clamp(2rem,4vw,4rem)] font-normal text-white leading-[1.2] uppercase tracking-wide mb-8">
                       Sail further,
                       <br />
                       travel smarter.

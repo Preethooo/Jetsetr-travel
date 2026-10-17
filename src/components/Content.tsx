@@ -31,7 +31,7 @@ export function About() {
       <div className="grid lg:grid-cols-12 gap-12 lg:gap-16">
         <Stagger visible={inView} className="lg:col-span-7">
           <Eyebrow>About JETSETR</Eyebrow>
-          <h2 className="text-[clamp(1.75rem,3.6vw,3.25rem)] font-light uppercase leading-[1.2] tracking-wide text-navy">
+          <h2 className="text-[clamp(1.75rem,3.6vw,3.25rem)] font-normal uppercase leading-[1.2] tracking-wide text-navy">
             Your ideal travel partner, <span className="text-navy/50">coming in or heading out.</span>
           </h2>
         </Stagger>
@@ -102,7 +102,7 @@ export function Services({ onEnquire }: { onEnquire: EnquireFn }) {
     <section id="services" ref={ref} className="bg-white px-6 sm:px-8 md:px-20 lg:px-32 py-24 md:py-36">
       <Stagger visible={inView} className="max-w-2xl mb-14 md:mb-20">
         <Eyebrow>What we do</Eyebrow>
-        <h2 className="text-[clamp(1.75rem,3.6vw,3.25rem)] font-light uppercase leading-[1.2] tracking-wide text-navy">
+        <h2 className="text-[clamp(1.75rem,3.6vw,3.25rem)] font-normal uppercase leading-[1.2] tracking-wide text-navy">
           Four ways to travel with us
         </h2>
       </Stagger>
@@ -114,7 +114,7 @@ export function Services({ onEnquire }: { onEnquire: EnquireFn }) {
               className="group h-full w-full text-left p-8 flex flex-col hover:bg-sand transition-colors duration-300"
             >
               <span className="text-[11px] tracking-[0.25em] uppercase text-gold">{s.tag}</span>
-              <h3 className="mt-4 text-xl font-light uppercase tracking-wide text-navy">{s.title}</h3>
+              <h3 className="mt-4 text-xl font-normal uppercase tracking-wide text-navy">{s.title}</h3>
               <p className="mt-3 text-sm leading-relaxed text-navy/65">{s.body}</p>
               <ul className="mt-6 space-y-2 text-sm text-navy/80">
                 {s.points.map((p) => (
@@ -154,7 +154,7 @@ export function Destinations({ onEnquire }: { onEnquire: EnquireFn }) {
       <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8 mb-14 md:mb-20">
         <Stagger visible={inView} className="max-w-2xl">
           <Eyebrow>Where to next</Eyebrow>
-          <h2 className="text-[clamp(1.75rem,3.6vw,3.25rem)] font-light uppercase leading-[1.2] tracking-wide text-navy">
+          <h2 className="text-[clamp(1.75rem,3.6vw,3.25rem)] font-normal uppercase leading-[1.2] tracking-wide text-navy">
             Our recommendations
           </h2>
         </Stagger>
@@ -181,7 +181,7 @@ export function Destinations({ onEnquire }: { onEnquire: EnquireFn }) {
                 <div className="absolute left-6 right-6 bottom-6 flex items-end justify-between text-white">
                   <div>
                     <p className="text-[11px] tracking-[0.25em] uppercase text-white/75">{d.region}</p>
-                    <h3 className="mt-2 text-3xl font-light uppercase tracking-wide">{d.name}</h3>
+                    <h3 className="mt-2 text-3xl font-normal uppercase tracking-wide">{d.name}</h3>
                   </div>
                   <span className="w-10 h-10 rounded-full bg-white text-gray-800 flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
                     <ArrowRight size={16} />

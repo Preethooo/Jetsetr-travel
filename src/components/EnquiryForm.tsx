@@ -145,7 +145,7 @@ export default function EnquiryForm({ type, destination, onTypeChange }: Props) 
             <span className="w-6 h-px bg-gold" />
             Enquire
           </p>
-          <h2 className="text-[clamp(1.75rem,3.6vw,3.25rem)] font-light uppercase leading-[1.2] tracking-wide text-navy">
+          <h2 className="text-[clamp(1.75rem,3.6vw,3.25rem)] font-normal uppercase leading-[1.2] tracking-wide text-navy">
             Plan your next journey
           </h2>
           <p className="mt-6 text-sm leading-relaxed text-navy/65 max-w-sm">
@@ -173,7 +173,7 @@ export default function EnquiryForm({ type, destination, onTypeChange }: Props) 
 
           {status === 'sent' ? (
             <div className="py-16 border-t border-navy/15">
-              <h3 className="text-2xl font-light uppercase tracking-wide text-navy">Thank you — we’re on it.</h3>
+              <h3 className="text-2xl font-normal uppercase tracking-wide text-navy">Thank you — we’re on it.</h3>
               <p className="mt-4 text-sm text-navy/65">A JETSETR consultant will be in touch shortly.</p>
               <button onClick={() => setStatus('idle')} className="mt-8 text-xs tracking-[0.25em] uppercase text-navy underline underline-offset-8">
                 Send another enquiry

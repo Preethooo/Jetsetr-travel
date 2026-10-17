@@ -4,7 +4,7 @@
 
 html { scroll-behavior: smooth; }
 body {
-  font-family: 'Jost', 'Futura', 'Century Gothic', system-ui, sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, 'Inter', Arial, sans-serif;
   overflow-x: hidden;
   background: #F4EFE8;
   color: #1D3045;
